@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài Tập JS Buổi 2</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bài Tập JS Buổi 2</h1>
+      <div class="row">
+        <div class="col-2">
+          <!-- Nav pills -->
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="pill" href="#person_1"
+                >Person_1</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#person_2"
+                >Person_2</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#person_3"
+                >Person_3</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#person_4"
+                >Person_4</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#person_5"
+                >Person_5</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-10">
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane container active" id="person_1">
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="card">
+                    <div class="card-header">Tính tiền lương nhân viên</div>
+                    <div class="card-body">
+                      <div class="form-group">
+                        <label for="">Nhập số ngày làm</label>
+                        <input
+                          id="txtSoNgayLam"
+                          type="text"
+                          class="form-control"
+                        />
+                      </div>
+                      <button id="btnTinhLuongNV" class="btn btn-danger">
+                        Tính lương nhân viên
+                      </button>
+                    </div>
+                    <div
+                      id="footerTinhLuongNV"
+                      class="card-footer text-muted"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane container fade" id="person_2">
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="card">
+                    <div class="card-header">Tính giá trị trung bình</div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-4">
+                          <div class="form-group">
+                            <label for="">Nhập số thứ nhất</label>
+                            <input
+                              id="txtSoThuNhat"
+                              type="text"
+                              class="form-control"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="form-group">
+                            <label for="">Nhập số thứ hai</label>
+                            <input
+                              id="txtSoThuHai"
+                              type="text"
+                              class="form-control"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="form-group">
+                            <label for="">Nhập số thứ ba</label>
+                            <input
+                              id="txtSoThuBa"
+                              type="text"
+                              class="form-control"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="form-group">
+                            <label for="">Nhập số thứ tư</label>
+                            <input
+                              id="txtSoThuTu"
+                              type="text"
+                              class="form-control"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="form-group">
+                            <label for="">Nhập số thứ năm</label>
+                            <input
+                              id="txtSoThuNam"
+                              type="text"
+                              class="form-control"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <button id="btnGiaTriTrungBinh" class="btn btn-danger">
+                        Tính lương nhân viên
+                      </button>
+                    </div>
+                    <div
+                      id="footerGiaTriTrungBinh"
+                      class="card-footer text-muted"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane container fade" id="person_3">
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="card">
+                    <div class="card-header">Tính tiền quy đổi</div>
+                    <div class="card-body">
+                      <div class="form-group">
+                        <label for="">Nhập số tiền quy đổi</label>
+                        <input
+                          id="txtTienQuyDoi"
+                          type="text"
+                          class="form-control"
+                        />
+                      </div>
+                      <button id="btnTienQuyDoi" class="btn btn-danger">
+                        Tính tiền quy đổi
+                      </button>
+                    </div>
+                    <div
+                      id="footerTienQuyDoi"
+                      class="card-footer text-muted"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane container fade" id="person_4">
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="card">
+                    <div class="card-header">Tính hình chữ nhật</div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="form-group">
+                            <label for="">Nhập số chiều dài</label>
+                            <input
+                              id="txtChieuDai"
+                              type="text"
+                              class="form-control"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="form-group">
+                            <label for="">Nhập số chiều rộng</label>
+                            <input
+                              id="txtChieuRong"
+                              type="text"
+                              class="form-control"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <button id="btnTinhHCN" class="btn btn-danger">
+                        Tính tiền quy đổi
+                      </button>
+                    </div>
+                    <div
+                      id="footerTinhHCN"
+                      class="card-footer text-muted"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane container fade" id="person_5">
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="card">
+                    <div class="card-header">Tính tổng 2 ký số</div>
+                    <div class="card-body">
+                      <div class="form-group">
+                        <label for="">Nhập số 2 ký số</label>
+                        <input id="txt2kySo" type="text" class="form-control" />
+                      </div>
+                      <button id="btnTong2kyso" class="btn btn-danger">
+                        Tính tiền quy đổi
+                      </button>
+                    </div>
+                    <div
+                      id="footerTong2kyso"
+                      class="card-footer text-muted"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
